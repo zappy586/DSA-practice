@@ -9,12 +9,20 @@ int add(int a, int b)
     return c;
 }
 
+void swap(int *x, int &y)
+{
+    int temp;
+    temp=*x;
+    *x = y;
+    y = temp;
+}
+
 int main()
 {
     int num1 = 10;
     int num2 = 15;
-    int sum;
+    
+    swap(&num1, num2);
 
-    sum = add(num1, num2);
-    cout<<sum<<endl;
+    cout<<num1<<"\n"<<num2<<endl;
 }
