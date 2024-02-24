@@ -25,7 +25,7 @@ int * fun2(int size)
 }
 
 
-int main()
+int main(int argc, char **argv)
 {
     int *ptr,sz = 5;
 
