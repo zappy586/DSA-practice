@@ -6,10 +6,10 @@ using namespace std;
 
 class Rectangle
 {
-    public:
+public:
     int length;
     int breadth;
-
+private:
     Rectangle(int l, int b)
     {
         length=l;
